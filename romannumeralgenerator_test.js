@@ -4,8 +4,8 @@
 var romannumgen = require('./romannumeralgenerator');
 
 exports.testlimits = function(test){
-	test.throws(romannumgen.generate(4000), 'Number to large');
-	test.throws(romannumgen.generate(0), 'Number to small');
+	test.throws(function(){romannumgen.generate(4000)}, Error, 'Number to large');
+	test.throws(function(){romannumgen.generate(0)}, Error, 'Number to small');
 	test.done();
 };
 
