@@ -1,51 +1,55 @@
-UNIT_MAP = {
-	1: 'I',
-	2: 'II',
-	3: 'III',
-	4: 'IV',
-	5: 'V',
-	6: 'VI',
-	7: 'VII',
-	8: 'VIII',
-	9: 'IX'
-};
+UNIT_MAP = [
+	'',
+	'I',
+	'II',
+	'III',
+	'IV',
+	'V',
+	'VI',
+	'VII',
+	'VIII',
+	'IX'
+];
 
-TEN_MAP = {
-	1: 'X',
-	2: 'XX',
-	3: 'XXX',
-	4: 'XL',
-	5: 'L',
-	6: 'LX',
-	7: 'LXX',
-	8: 'LXXX',
-	9: 'XC'
-};
+TEN_MAP = [
+	'',
+	'X',
+	'XX',
+	'XXX',
+	'XL',
+	'L',
+	'LX',
+	'LXX',
+	'LXXX',
+	'XC'
+];
 
-HUNDREDS_MAP = {
-	1: 'C',
-	2: 'CC',
-	3: 'CCC',
-	4: 'CD',
-	5: 'D',
-	6: 'DC',
-	7: 'DCC',
-	8: 'DCCC',
-	9: 'CM'
-};
+HUNDREDS_MAP = [
+	'',
+	'C',
+	'CC',
+	'CCC',
+	'CD',
+	'D',
+	'DC',
+	'DCC',
+	'DCCC',
+	'CM'
+];
 
-THOUSANDS_MAP = {
-	1: 'M',
-	2: 'MM',
-	3: 'MMM'
-};
+THOUSANDS_MAP = [
+	'',
+	'M',
+	'MM',
+	'MMM'
+];
 
-INDEX_MAP = {
-	0: UNIT_MAP,
-	1: TEN_MAP,
-	2: HUNDREDS_MAP,
-	3: THOUSANDS_MAP,
-}
+INDEX_MAP = [
+	UNIT_MAP,
+	TEN_MAP,
+	HUNDREDS_MAP,
+	THOUSANDS_MAP,
+];
 
 exports.generate = function(n){
 	/*
