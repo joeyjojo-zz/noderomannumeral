@@ -18,4 +18,5 @@ exports.testNumbers = function(test){
 	test.strictEqual(romannumgen.generate(5), 'V');
 	test.strictEqual(romannumgen.generate(10), 'X');
 	test.strictEqual(romannumgen.generate(20), 'XX');
+	test.done();
 };
