@@ -52,6 +52,9 @@ exports.generate = function(n){
 	* Returns a roman number based on the number, n
 	* Assumes n is a integer
 	*/
+	if (n > 3999){ throw new Error('Number is too large')};
+	if (n < 1){ throw new Error('Number is too small')};
+
 	var retVal = [];
 	var nStr = n.toString();
 	// put them in unit/tens/hundreds order
